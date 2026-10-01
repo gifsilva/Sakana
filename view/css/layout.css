@@ -1,0 +1,67 @@
+/* ========================================
+   LAYOUT - ESTRUTURA DO PROJETO
+======================================== */
+
+/* Container Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Layout Flexível */
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 78px;
+}
+
+/* Conteúdo Principal */
+.main-content,
+.conteudo {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Sidebar / Menu Lateral */
+.sidebar,
+.menu-lateral {
+    width: 290px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .sidebar,
+    .menu-lateral {
+        width: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        padding-top: 90px;
+    }
+
+    .sidebar,
+    .menu-lateral {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 16px;
+    }
+
+    .main-content,
+    .conteudo {
+        padding: 18px;
+    }
+}

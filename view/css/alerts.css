@@ -1,0 +1,95 @@
+/* ========================================
+   COMPONENTE ALERTAS
+======================================== */
+
+/* Classe Base de Alertas */
+.alert {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    animation: fadeAlert 0.25s ease;
+}
+
+/* Alertas Toast (flutuantes) */
+.alert-toast {
+    width: auto;
+    max-width: 90%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    animation: fadeAlert 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Texto do alerta */
+.alert-text {
+    flex: 1;
+}
+
+/* Botão fechar alerta */
+.alert-close {
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.alert-close:hover {
+    opacity: 1;
+}
+
+/* Variações de Tipo */
+.alert-success,
+.alert-toast.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error,
+.alert-toast.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-warning,
+.alert-toast.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.alert-info,
+.alert-toast.alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Animação de entrada */
+@keyframes fadeAlert {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,222 @@
+/* ========================================
+   PÁGINAS ESPECÍFICAS
+======================================== */
+
+/* Página Genérica */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url("../images/fundo_branco.png");
+}
+
+/* Página Home */
+.page-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 32px;
+    background-image: url("../images/fundo_branco.png");
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 1100px);
+    min-height: 70vh;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.home-brand {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    transition: align-items 0.25s ease;
+}
+
+.home-brand #logo {
+    width: min(18rem, 100%);
+    height: auto;
+}
+
+.home-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 280px);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.home-actions > * {
+    width: 100%;
+}
+
+.home-actions .btn-primary,
+.home-actions .btn-secondary {
+    min-height: 48px;
+    padding: 12px 22px;
+    text-decoration: none;
+}
+
+.about-panel {
+    flex: 0 1 0;
+    max-width: 680px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 48px;
+    opacity: 0;
+    color: var(--dark-blue);
+    line-height: 1.7;
+    transform: translateY(12px);
+    transition: flex-basis 0.45s ease,
+                max-height 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+                padding 0.45s ease,
+                opacity 0.3s ease,
+                transform 0.3s ease;
+}
+
+.about-panel[hidden] {
+    display: none;
+}
+
+.about-panel h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+}
+
+.about-panel p {
+    margin: 0 0 14px;
+}
+
+.home-container.has-about .home-brand {
+    flex: 0 1 360px;
+}
+
+.home-container.has-about .home-actions {
+    flex-direction: column;
+    width: min(100%, 250px);
+}
+
+.home-container.has-about .home-actions > * {
+    width: 100%;
+}
+
+.home-container.has-about .about-panel {
+    flex-basis: 680px;
+    max-height: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 760px) {
+    .page-home {
+        padding: 24px 18px;
+    }
+
+    .home-container,
+    .home-container.has-about {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 0;
+    }
+
+    .home-container.has-about .home-brand {
+        flex-basis: auto;
+    }
+
+    .home-container.has-about .home-actions {
+        flex-direction: column;
+        width: min(100%, 280px);
+    }
+
+    .home-container.has-about .home-actions > * {
+        width: 100%;
+    }
+
+    .about-panel {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-container.has-about .about-panel {
+        flex-basis: 100%;
+        padding: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-panel {
+        transform: none;
+        transition: flex-basis 0.28s ease,
+                    max-height 0.28s ease,
+                    padding 0.28s ease,
+                    opacity 0.28s ease;
+    }
+}
+
+/* Página Login */
+.page-login {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--medium-blue), #1f3d5a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container de Login */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 28px;
+    background-color: var(--light-bg);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+/* Página de Gerência */
+.page-gerencia {
+    min-height: 100vh;
+    background-image: url("../images/fundo_azul.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Home da Gerência */
+.home-gerencia {
+    min-height: calc(100vh - 105px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.home-gerencia h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .page-login {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+}

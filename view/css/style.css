@@ -1,0 +1,43 @@
+/* ========================================
+   SAKANA CSS - ARQUIVO PRINCIPAL DE IMPORTAÇÃO
+========================================
+   Estrutura Organizada:
+   1. Variáveis e Temas
+   2. Reset Global
+   3. Componentes Reutilizáveis
+   4. Layout e Estrutura
+   5. Páginas Específicas
+   6. Animações
+======================================== */
+
+/* 1. VARIÁVEIS E TEMAS */
+@import url('variables.css');
+
+/* 2. RESET GLOBAL */
+@import url('reset.css');
+
+/* 3. COMPONENTES REUTILIZÁVEIS */
+@import url('alerts.css');
+@import url('buttons.css');
+@import url('forms.css');
+@import url('cards.css');
+@import url('typography.css');
+
+/* 4. LAYOUT E ESTRUTURA */
+@import url('layout.css');
+@import url('topbar.css');
+@import url('menu.css');
+
+/* 5. PÁGINAS ESPECÍFICAS */
+@import url('pages.css');
+
+/* 6. ANIMAÇÕES */
+@import url('animations.css');
+
+/* 7. EXTENSÕES ESPECÍFICAS DE PÁGINA */
+@import url('gerencia.css');
+@import url('perfil.css');
+@import url('cardapio.css');
+
+
+@import url('componentes.css');

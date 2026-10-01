@@ -1,0 +1,347 @@
+/* ========================================
+   PERFIL - ESTILOS ESPECÍFICOS
+   
+   NOTA: Este arquivo estende os estilos globais
+   de components.css/style.css com customizações
+   específicas da página de perfil.
+========================================*/
+
+/* Variáveis de Perfil */
+:root {
+    --perfil-surface: #ffffff;
+    --perfil-border: #e2e8ee;
+    --perfil-text: var(--dark-blue);
+    --perfil-muted: #6b7c8c;
+    --perfil-shadow: 0 8px 24px rgba(23, 48, 74, 0.12);
+}
+
+/* Página de Perfil */
+.perfil-page {
+    min-height: calc(100vh - 110px);
+    padding: 24px 22px 34px;
+}
+
+/* Header Card - Cabeçalho do Perfil */
+.perfil-header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 34px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary-wine), var(--primary-wine-dark));
+    color: #fffdf8;
+    box-shadow: var(--perfil-shadow);
+}
+
+.perfil-kicker,
+.perfil-side-kicker {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.perfil-title {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.perfil-description {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: rgba(255, 253, 248, 0.85);
+}
+
+/* Avatar Card */
+.perfil-avatar-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 190px;
+    padding: 14px 17px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.perfil-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.perfil-avatar-card strong,
+.perfil-avatar-card span {
+    display: block;
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+}
+
+.perfil-avatar-card strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.perfil-avatar-card span {
+    margin-top: 3px;
+    color: rgba(255, 253, 248, 0.8);
+    font-size: 0.82rem;
+}
+
+/* Layout de Perfil */
+.perfil-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.perfil-layout > .perfil-form {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 980px;
+}
+
+/* Form de Perfil */
+.perfil-form {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 10px;
+    box-shadow: var(--perfil-shadow);
+    border: 1px solid var(--perfil-border);
+    padding: 34px;
+}
+
+.perfil-form .form-grid {
+    gap: 22px;
+    margin-bottom: 24px;
+}
+
+.perfil-form .form-field {
+    gap: 9px;
+}
+
+.perfil-form .form-field span {
+    font-size: 0.88rem;
+    color: var(--perfil-text);
+}
+
+.perfil-form .form-input {
+    box-sizing: border-box;
+    border: 1px solid #cbd5dc;
+    border-radius: 8px;
+    background: #fbfcfd;
+    color: var(--perfil-text);
+    text-align: left;
+}
+
+.perfil-form .form-input:hover {
+    border-color: #9fb2c1;
+}
+
+.perfil-form .form-input:focus {
+    border-color: var(--medium-blue);
+    box-shadow: 0 0 0 3px rgba(93, 131, 167, 0.16);
+}
+
+.perfil-form input[type="file"] {
+    min-height: 48px;
+    padding: 8px;
+    background: #f1f5f6;
+    border-style: dashed;
+}
+
+.perfil-form input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    background: var(--primary-wine);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.perfil-upload-help {
+    display: block;
+    margin-top: 2px;
+    line-height: 1.5;
+}
+
+.perfil-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--perfil-border);
+}
+
+.perfil-note-title {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--perfil-text);
+    margin-bottom: 6px;
+}
+
+.perfil-note {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: var(--perfil-muted);
+    line-height: 1.5;
+    max-width: 420px;
+}
+
+/* Ações de Perfil */
+.perfil-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 22px;
+    border-top: 1px solid var(--perfil-border);
+}
+
+.perfil-actions a,
+.perfil-actions button {
+    min-width: 145px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.perfil-actions .btn-secondary {
+    color: var(--perfil-muted);
+    background: #edf1f3;
+}
+
+.perfil-actions .btn-secondary:hover {
+    background: #dfe7eb;
+}
+
+/* Side Card - Card Lateral */
+.perfil-side-card {
+    background: var(--perfil-surface);
+    border-radius: 10px;
+    box-shadow: var(--perfil-shadow);
+    border: 1px solid var(--perfil-border);
+    padding: 28px;
+    color: var(--perfil-text);
+}
+
+.perfil-side-card h2 {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-size: 1.15rem;
+}
+
+/* Info List */
+.perfil-info-list {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding: 0;
+}
+
+.perfil-info-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--perfil-border);
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.88rem;
+    color: var(--perfil-muted);
+}
+
+.perfil-info-list li strong {
+    color: var(--perfil-text);
+    font-weight: 600;
+}
+
+/* Side Tip */
+.perfil-side-tip {
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(155, 15, 71, 0.06);
+    border: 1px solid rgba(155, 15, 71, 0.12);
+}
+
+.perfil-side-tip h3 {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.92rem;
+    color: var(--perfil-text);
+}
+
+.perfil-side-tip p {
+    font-family: 'Poppins', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: var(--perfil-muted);
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 980px) {
+    .perfil-header-card,
+    .perfil-layout,
+    .perfil-form-footer {
+        display: block;
+    }
+
+    .perfil-avatar-card {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .perfil-actions {
+        margin-top: 18px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfil-page {
+        padding: 16px 12px 24px;
+    }
+
+    .perfil-header-card,
+    .perfil-form {
+        padding: 24px 20px;
+    }
+
+    .perfil-title {
+        font-size: 1.65rem;
+    }
+
+    .perfil-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .perfil-actions {
+        flex-direction: column-reverse;
+    }
+
+    .perfil-actions a,
+    .perfil-actions button {
+        width: 100%;
+    }
+}

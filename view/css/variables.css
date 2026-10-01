@@ -1,0 +1,31 @@
+/* ========================================
+   FONTES
+======================================== */
+@font-face {
+    font-family: 'Hogback';
+    src: url('../fonts/principal/Hogback Demo Version.otf') format('opentype');
+}
+
+/* ========================================
+   VARIÁVEIS GLOBAIS - TEMA SAKANA
+======================================== */
+:root {
+    /* Cores Primárias */
+    --primary-wine: #9b0f47;
+    --primary-wine-hover: #b31256;
+    --primary-wine-dark: #7f0d3c;
+
+    /* Cores Secundárias */
+    --dark-blue: #17304a;
+    --medium-blue: #5d83a7;
+    --light-bg: #f4efe6;
+    --card-bg: #f5f1e3;
+    --text-light: #ffffff;
+    --text-soft: #f3ede3;
+    --border-light: #e8dfd2;
+
+    /* Componentes */
+    --border-radius: 12px;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}

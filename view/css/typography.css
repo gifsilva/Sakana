@@ -1,0 +1,49 @@
+/* ========================================
+   TIPOGRAFIA
+======================================== */
+
+/* Título Principal */
+.titulo {
+    font-family: 'Hogback', Arial, sans-serif;
+    font-size: 5rem;
+    color: var(--primary-wine);
+    margin-bottom: -10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-family: 'Hogback', Arial, sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
+}
+
+/* Título de Página */
+.titulo-pagina,
+.titulo-form {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.titulo-pagina {
+    color: #2c3e50;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .titulo-pagina,
+    .titulo-form {
+        font-size: 24px;
+    }
+}
