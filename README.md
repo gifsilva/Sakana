@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sakana
 🍽️ Simulador de Sistema de Gerenciamento de Restaurante
 📌 Sobre o Projeto
@@ -16,3 +17,6 @@ Novas funcionalidades podem ser adicionadas futuramente para tornar a simulaçã
 
 
 Desenvolvido por Petrick Preite, Sojiro Takemura, Maria Bononi, Giovanna Ferreira e Matheus Marangoni.
+=======
+# Sakana
+>>>>>>> e72fc123ff7aa8516b3077c0f4cabb5520b9e273
